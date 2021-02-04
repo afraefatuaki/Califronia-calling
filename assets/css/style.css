@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+@font-face{
+    font-family: Larish-semibold1;
+    src: url(../fonts/LarishNeueSemibold.woff)
+}
+@font-face{
+    font-family: Larish-semibold2;
+    src: url(../fonts/Larish\ Neue\ Semibold.woff2)
+}
+.light{
+    background-color: #fff;
+    color: #000;
+}
+
+body{
+    margin: 0px;
+    background-color: #000;
+    color: #fff;
+}
+
+h1{
+    font-size: 6em;
+    font-family: Larish-semibold2;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 28px;
+}
+
+/* ==================================================
+            Header
+==================================================*/
+
+.line{
+    border-right: 3px solid gray;
+    height: 25vh;
+    width: 50%;
+}
+
+header p, header h1{
+    text-align: center;
+    
+}
+
+header p:first-of-type{
+    margin-top: 50px;
+}
+
+header p:nth-of-type(2){
+    margin-top: 40px;
+}
+
+header h1:first-of-type{
+    margin: 0px;
+}
+
+header h1:nth-of-type(2){
+    margin: -40px 0;
+    -webkit-text-stroke: 1px white;
+    color: #000;
+}
+
+.bear{
+    display: flex;
+   justify-content: space-between;
+   margin: 10% 9% 13% 9%;
+}
+
+.bear a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px 40px;
+}
+.bear a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+/* ==================================================
+            MAIN
+==================================================*/
+/* ---- Section 01 ---- */
+.fact{
+    margin-left: 9%;
+}
+
+.map{
+    display: grid;
+    grid-template-columns: 0.5fr 2.7fr 3fr ;
+    grid-template-rows: 200px 600px 300px;
+}
+.map article{
+    grid-area: 2/ 2/3/-1;
+}
+.map img{
+    grid-area: 1/ 3/3/-1;
+    height: 92vh;
+    padding-bottom: 100px;
+}
+main h1{
+    margin: 0px;
+}
+/* ---- Section 02 ---- */
+section:nth-of-type(2){
+    height: 140vh;
+    position: relative;
+}
+section:nth-of-type(2) img:first-child{
+    right: 20%;
+    top: -4%;
+}
+section:nth-of-type(2) img:nth-child(2){
+    left: 10%;
+    top: 12%;
+}
+section:nth-of-type(2) img{
+    position: absolute;
+    height: 19vh;
+}
+section:nth-of-type(2) h1{
+    font-size: 4em;
+}
+
+section:nth-of-type(2) div:nth-of-type(1){
+    position: absolute;
+    left: 40%;
+    top: 20%;
+
+}
+
+section:nth-of-type(2) img:nth-child(4){
+    right: 0%;
+    top: 29%;
+}
+
+section:nth-of-type(2) img:nth-child(5){
+    left: 20%;
+    top: 40%;
+}
+
+section:nth-of-type(2) img:nth-child(6){
+    right: 20%;
+    top: 50%;
+}
+section:nth-of-type(2) img:nth-child(7){
+    left: 0%;
+    top: 65%;
+}
+
+section:nth-of-type(2) div:nth-of-type(2){
+    position: absolute;
+    left: 30%;
+    top: 68%;
+
+}
+section:nth-of-type(2) img:last-child{
+    height: 30vh;
+    right: 20%;
+    top: 85%;
+
+}
+
+/* ---- Section 03 ---- */
+.goldenBear{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+}
+.bear1{
+    height: 90vh;
+    position: absolute;
+    left: 12%;
+    top: 135%;
+    z-index: 1;
+}
+
+.bear2{
+    position: absolute;
+    height: 60vh;
+    left: 58%;
+    top: 165%;
+    z-index: 2;
+}
+
+/* ---- Section 04 ---- */
+.container ~ section{
+    
+    margin-top: 50%;
+    position: relative;
+    overflow: hidden;
+    height: 210vh;
+}
+.circle{
+    height: 54vh;
+    position: absolute;
+    right: -8%;
+    top: -7%;
+    animation: rotation 7s linear infinite;
+}
+@keyframes rotation{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+   
+}
+.Poppy{
+    margin-top: 15%;
+}
+h2{
+    font-size: 2.2em;
+}
+
+.pb3{
+    height: 60vh;
+    position: absolute;
+    bottom: 10%;
+    left: 14%;
+    z-index: 1;
+}
+
+.rosebear{
+    position: absolute;
+    height: 90vh;
+    bottom: 5%;
+    right: 15%;
+    z-index: 0;
+   
+}
+
+/* ==================================================
+           FOOTER
+==================================================*/
+footer img{
+    height: 70vh;
+}
+.movingLine{
+    padding-top: 10%;
+    
+}
+
+.movingLine a{
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid gray;
+    padding: 20px 40px;
+    margin: 10px;
+}
+
+.socialMedia img{
+    height: 20px;
+}
+
+.socialMedia{
+    padding-top: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.socialMedia article:first-child{
+    width: 55%;
+}
+.redCross img:first-child{
+    height: 40px;
+}
+
+.movingLine article:first-child{
+    padding-left: 10%;
+}
+
+.movingLine article:first-child h2{
+    margin-bottom: 50px;
+}
+
+.redCross img:nth-child(2){
+    height: 30px;
+}
+marquee{
+    font-size: 8em;
+    background: #fff;
+    color: #000;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -250px;
+    bottom: 55%;
+    height:150px;
+    width:70%
+}
+footer{
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+@media (max-width: 768px){
+    
+    .fact{
+        font-size: 2.5em;
+        line-height: 60px;
+    
+    }
+    /* ==================================================
+            MAIN
+    ==================================================*/
+        /* ---- Section 01 ---- */
+    .map article h1{
+        font-size: 2.5em;
+    }
+    .map article{
+        padding-left: 2%;
+    }
+    .map{
+        grid-template-rows: 150px 600px 100px;
+    }
+    .map img{
+
+        grid-area: 2/ 3/3/-1;
+        height: 30vh;
+        padding-bottom: 0px;
+    }
+        /* ---- Section 02 ---- */
+    section:nth-of-type(2){
+        height: 160vh;
+    }
+    section:nth-of-type(2) img:first-child{
+        right: 10%;
+        top: -5%;
+    }
+    section:nth-of-type(2) img:nth-child(2){
+        top: -5%;
+    }
+    section:nth-of-type(2) h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    section:nth-of-type(2) div:nth-of-type(1){
+        left: 25%;
+        top: 12%;
+    }
+    section:nth-of-type(2) img:nth-child(4){
+        right: 10%;
+        top: 30%;
+    }
+    section:nth-of-type(2) img:nth-child(5){
+        left: 10%;
+        top: 30%;
+    }
+    section:nth-of-type(2) div:nth-of-type(2){
+        position: absolute;
+        left: 25%;
+        top: 47%;
+    
+    }
+    section:nth-of-type(2) img:nth-child(6){
+        right: 10%;
+        top: 63%;
+    }
+    section:nth-of-type(2) img:nth-child(7){
+        left: 10%;
+        top: 63%;
+    }
+    section:nth-of-type(2) img:last-child{
+        height: 30vh;
+        right: 20%;
+        bottom: 100px;
+    
+    }
+
+    /* ---- Section 03 ---- */
+    .goldenBear{
+        height: 50vh;
+    
+    }
+    .goldenBear h1{
+        font-size: 2.5em;
+    }
+    .goldenBear h2{
+        font-size: 1.5em;
+    }
+    .bear1{
+        height: 45vh;
+        position: absolute;
+        left: 10%;
+        top: 120%;
+    }
+    
+    .bear2{
+        position: absolute;
+        height: 30vh;
+        left: 58%;
+        top: 135%;
+
+    }
+    /* ---- Section 04 ---- */
+    .container ~ section{
+        height: 120vh;
+    }
+    .circle{
+        height: 34vh;
+        right: -15%;
+    
+    }
+    .Poppy{
+        margin-top: 15%;
+    }
+    h2{
+        font-size: 2.2em;
+    }
+    
+    .pb3{
+        height: 30vh;
+        left: 10%;
+    }
+    .rosebear{
+        height: 45vh;
+        bottom: 5%;
+    }
+
+    /* ---- Footer ---- */
+    .movingLine h2{
+        font-size: 1.5em;
+    }
+    marquee{
+        height: 40px;
+        width:70% ;
+        font-size: 2em;
+        transform: rotate(45deg);
+        position: absolute;
+        right: -100px;
+        bottom: 67%;
+    }
+}
+
+
+
+
+
+
+
+
+
