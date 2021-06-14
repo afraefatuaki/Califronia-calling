@@ -1,5 +1,4 @@
-# Califronia-calling
-# Welcome to my work responsibly project,(HTML/CSS)
+# Welcome to my Califronia-calling project,(HTML/CSS)
 
  In case you´re interested in seeing the resutls, here is the link: https://afraefatuaki.github.io/Califronia-calling/
 
